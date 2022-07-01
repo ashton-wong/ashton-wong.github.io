@@ -1,31 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-    <link rel="stylesheet" href="stylesheet.css">
     <title>Ashton Wong</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+    <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
 </head>
-<div class="sidenav">
-    <p>(insert pic/logo?)</p>
-    <a href="#about">About</a>
-    <a href="#work">Work</a>
-    <a href="#contact">Contact</a>
-  </div>
-<nav>
-    <div class="container">
-       <p>Ashton Wong</p>
+
+<body>
+    <div class="main">
+        <section class="about">
+            <h1>Ashton Wong</h1>
+            <p>I'm currently a Computer Science student at UC Santa Barbara, with a particular interest in artificial intelligence, web and mobile development, and business. I have diverse experience in leadership positions and have gained core communication skills in a work environment. Furthermore, I play on my school's lacrosse team and have a particular passion for music production.</p>
+        </section>
+          
+        <section class="work">
+            <h1>Work</h1>
+            <p>Coming soon...</p>
+        </section>
+
+        <section class="contact">
+            <h1>Contact</h1>
+            <p>peep the gram @wong.ashton</p>
+        </section>
     </div>
-</nav>
-<div id="about" class = "about">
-    <h2>About</h2>
-    <p>I'm currently a Computer Science student at UC Santa Barbara, with a particular interest in artificial intelligence, web and mobile development, and business. I have diverse experience in leadership positions and have gained core communication skills in a work environment. Furthermore, I play on my school's lacrosse team and have a particular passion for music production.</p>
-</div>
-<div id="work" class = "work">
-    <h2>Work</h2>
-    <p>Coming soon...</p>
-</div>
-<div id="contact" class = "contact">
-    <h2>Contact</h2>
-    <p>peep the gram @wong.ashton</p>
-</div>
+</body>
+
+<script>
+    $(".main").onepage_scroll({
+        sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
+        easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
+                                         // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+        animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
+        pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
+        updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+        beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
+        afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
+        loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+        keyboard: true,                  // You can activate the keyboard controls
+        responsiveFallback: false,       // You can fallback to normal page scroll by defining the width of the browser in which
+                                         // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
+                                         // the browser's width is less than 600, the fallback will kick in.
+        direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
+    });
+</script>
+
 </html>
