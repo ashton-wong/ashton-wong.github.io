@@ -1,16 +1,49 @@
 h1 {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-}
-p {
-    text-align: center;
+    /* font-family:'Courier New', Courier, monospace; */
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 60px;
+    text-align: left;
     margin:60px;
 }
+h2 {
+    /* font-family:'Courier New', Courier, monospace; */
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    text-align: right;
+    margin-top: 6.1%;
+}
+p {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: light;
+    text-align: left;
+    margin:60px;
+}
+.about p {
+    /* margin-top: 8%;
+    margin-left: 35%; */
+    font-size: 26px;
+    color:darkslategrey
+}
 .about {
-    background-color:slategrey;
+    background-color:rgb(255, 255, 255);
 }
 .about h1 {
-    color:whitesmoke;
+    /* color:whitesmoke; */
+    color:darkslateblue
+}
+.aboutContainerHeader{
+    display:flex;
+}
+.aboutContainerHeader h2{
+    color:darkslateblue
+}
+.aboutContainer{
+    display: flex;
+    margin-left: 5%;
+}
+.aboutContainer img{
+    margin-top: 4%;
+    border-radius: 50%;
 }
 .work {
     background-color:whitesmoke;
