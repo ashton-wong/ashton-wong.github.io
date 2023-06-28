@@ -11,7 +11,37 @@
 
 <body>
     <div class="main">
+        <section class="home">
+        </section>
+
         <section class="about">
+            <h1>My Journey</h1>
+            <div class="aboutinfocontainer">
+                <div class="aboutinfo">
+                    <img src="us-tx-circle-01.png" style="border-radius:50%;border-color:black;border: 4px solid;">
+                    <p>I grew up in the great state of Texas! The capital city of Austin to be exact. Did you know that the capitol 
+                        of Texas was made to be about 15 feet taller than the US Capitol? (That's what the giant star that Lady
+                        Libery holds is for)
+                    </p>
+                </div>
+                <div class="aboutinfo">
+                    <img src="lasalogo.png" style="border-radius: 50%;border-color: black;border:4px solid">
+                    <p>I graduated high school at the Liberal Arts and Science Academy, or LASA for short, with a magnet
+                        endorsement and 4.3 GPA. I did a lot of things there, including but not limited to playing lacrosse,
+                        football, golf, and starting both a computer science club and an economics club.
+                    </p>
+                </div>
+                <div class="aboutinfo">
+                    <img src="ucsbcrest.png">
+                    <p>I'm currently a Regents and Honors Scholar at UC Santa Barbara, where I'm pursuing a B.S. in Computer Science
+                        and a Certificate in Technology Management. I help run Fellowship of Christian Athletes, and also play
+                        Lacrosse for my school!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="about">
             <div class="aboutContainerHeader">
                 <div class="name">
                     <h1>Ashton Wong</h1>
@@ -28,7 +58,7 @@
                     as well as core communication skills in a fast-paced work environment. 
                     Furthermore, I dedicate a lot of my time as an active member of the UCSB Men's Lacrosse Team.</p>
             </div>
-        </section>
+        </section> -->
           
         <section class="work">
             <div class="aboutContainerHeader">
@@ -61,7 +91,7 @@
                                          // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
         animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
         pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
-        updateURL: true,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+        updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
         beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
         afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
         loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
