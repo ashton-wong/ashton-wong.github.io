@@ -301,8 +301,69 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    header {
+        padding: 1rem 0; /* Reduce header padding */
+    }
+
     nav ul li {
-        display: block;
+        display: block; /* Stack navigation links vertically */
         margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1rem; /* Reduce font size for navigation links */
+    }
+
+    #home {
+        height: 100vh; /* Retain full-screen height for the home section */
+    }
+
+    #home h1 {
+        font-size: 2.5rem; /* Reduce font size for the home section */
+        max-width: 90%; /* Increase text width for smaller screens */
+    }
+
+    section:not(#home) {
+        height: auto; /* Allow other sections to adjust height based on content */
+        padding: 2rem 1rem; /* Add padding for better spacing */
+    }
+
+    .about-container {
+        flex-direction: column; /* Stack image and text vertically */
+        gap: 2rem; /* Reduce gap between elements */
+    }
+
+    .about-image {
+        width: 150px; /* Reduce image size */
+    }
+
+    .about-links {
+        position: static; /* Remove absolute positioning */
+        margin-top: 1rem; /* Add spacing above the text */
+        display: flex;
+        justify-content: flex-start; /* Left-align the buttons */
+        gap: 1rem; /* Maintain spacing between buttons */
+    }
+
+    .project-container {
+        gap: 1.5rem; /* Reduce gap between project items */
+    }
+
+    .project-item {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .project-image {
+        width: 100%; /* Make project images full width */
+        max-width: 300px; /* Limit maximum width */
+    }
+
+    .github-icon {
+        display: none; /* Hide the GitHub button on mobile */
+    }
+
+    footer {
+        padding: 0.5rem 0; /* Reduce footer padding */
     }
 }
