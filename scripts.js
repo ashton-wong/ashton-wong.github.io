@@ -1,17 +1,17 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+document.querySelectorAll('a[href^="#"], .indicator').forEach(element => {
+    element.addEventListener('click', function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+        const targetId = this.getAttribute('href') || this.getAttribute('data-target');
+        const targetElement = document.querySelector(targetId);
+        const headerHeight = document.querySelector('header').offsetHeight;
 
-document.querySelectorAll('.indicator').forEach(indicator => {
-    indicator.addEventListener('click', function () {
-        document.querySelector(this.getAttribute('data-target')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        if (targetElement) {
+            const targetPosition = targetElement.offsetTop - headerHeight; // Adjust for header height
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
     });
 });
 
