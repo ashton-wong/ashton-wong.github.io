@@ -3,33 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Ashton Wong</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#home" data-section="home">Home</a></li>
+                <li><a href="#about" data-section="about">About Me</a></li>
+                <li><a href="#projects" data-section="projects">Projects</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="section-container">
         <section id="home">
-            <h1>Ashton Wong</h1>
+            <h1><span id="typed-text"></span></h1>
         </section>
 
         <section id="about">
-            <h2>About Me</h2>
-            <p>me me me blah blah blah</p>
+            <div class="about-container">
+                <img src="headshot.jpg" alt="Ashton Wong Headshot" class="about-image">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>I'm a Regents Scholar at UC Santa Barbara, pursuing a B.S. in Computer Science and a Certificate in Technology Management. My experience spans full-stack development, data-driven solutions, and marketing technologies. I thrive on solving complex technical challenges, working in agile teams, and bridging technology with business strategy.
+                        <br>
+                        <br>With a tech-first, collaborative, and entrepreneurial mindset, I’m always eager to learn, adapt, and drive meaningful impact.</p>
+                    <div class="about-links">
+                        <a href="https://www.linkedin.com/in/ashton-wong-0a28771aa/" target="_blank" class="linkedin-icon">
+                            <img src="linkedin-icon.png" alt="LinkedIn">
+                        </a>
+                        <a href="AshtonWongResume.pdf" target="_blank" class="resume-button">View Resume</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="projects">
-            <h2>Projects</h2>
-            <p>incoming</p>
+            <div class="project-container">
+                <div class="project-item">
+                    <img src="suilogo.jpeg" alt="SuiChat" class="project-image">
+                    <div class="project-text">
+                        <h3>SuiChat</h3>
+                        <p>For our senior capstone at UC Santa Barbara, me and 4 other teammates developed a decentralized messaging app utilizing the Sui blockchain for secure, censorship-resistant communication. View the source code <a href="https://github.com/bwr02/Mysten-Labs-SuiChat" target="_blank" class="github-link">here!</a></p>
+                        <a href="https://github.com/bwr02/Mysten-Labs-SuiChat" target="_blank" class="github-icon">
+                            <img src="githublogo.svg" alt="GitHub">
+                        </a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="martecha.png" alt="MarTecha" class="project-image">
+                    <div class="project-text">
+                        <h3>MarTecha</h3>
+                        <p>Initially brought on to conduct an in-depth competitive analysis for a client, I interned at a marketing operations startup in which I utilized Hubspot, Salesforce, and other necessary technical skills to produce solutions for client needs.</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="assistpro_llc_logo.jpeg" alt="AssistPro" class="project-image">
+                    <div class="project-text">
+                        <h3>AssistPro</h3>
+                        <p>As an intern for AssistPro, I cleaned and structured CRM data in Hubspot following a system transfer from Keap. Following this, I aided in constructing their email campaign and re-engagement workflow automations in Hubspot.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 
@@ -40,7 +77,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Ashton Wong</p>
+        <p>&copy; 2025 Ashton Wong</p>
     </footer>
 
     <script src="scripts.js"></script>
