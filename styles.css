@@ -346,7 +346,8 @@ footer {
     }
 
     .about-image {
-        width: 150px; /* Reduce image size */
+        width: 200px; /* Reduce image size */
+        align-items: center;
     }
 
     .about-links {
